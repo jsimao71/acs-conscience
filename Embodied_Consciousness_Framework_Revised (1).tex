@@ -1,0 +1,312 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\title{\textbf{From Self-Stabilizing Dynamics to Conscious Experience}\\[0.3em]
+\large A Physical and Ontological Framework for Embodied Consciousness}
+\author{Jorge Sim\~ao}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Status:} Conceptual foundation paper. Companion papers on computational modelling and relevance to artificial intelligence are in preparation; this paper is intended to stand independently of that work.
+
+\begin{abstract}
+\noindent This paper proposes a unified research programme connecting embodied cognition, dynamical systems theory, theoretical neuroscience, physics, and philosophy of mind. Rather than treating cognition and consciousness as separate problems, the framework argues that both emerge from the same class of self-stabilizing physical organizations.
+
+The proposal rests on three complementary ideas. First, cognition is understood as the progressive stabilization of perception-action loops, giving rise to hierarchical representations of increasingly invariant regularities in the world. Second, these processes are most naturally described by multiscale activation-correlation structures (ACS) rather than isolated neuron activity. Third, because neural computation is implemented through moving electrical charge, these organized dynamics necessarily generate coherent electromagnetic (EM) field organization. Conscious experience is proposed to correspond not to the EM field itself, but to the ontological realization of the metastable physical organization that the field manifests.
+
+The paper argues that the traditional hard problem of consciousness can be reformulated: the question of qualia becomes part of the broader ontological question of why organized physical existence possesses an intrinsic aspect at all. This reformulation is explicitly positioned relative to existing proposals in the same vein --- particularly Russellian monism \citep*{strawson2006} and electromagnetic field theories of consciousness \citep*{mcfadden2002a,mcfadden2020} --- rather than presented as a novel solution to the hard problem. The paper's original contribution is the specific mechanistic chain linking embodied stabilization, activation-correlation structure, and coherent field organization, together with a set of falsifiable, operationalized predictions that distinguish it from its nearest neighbours (Section~\ref{sec:predictions}).
+\end{abstract}
+
+\section{Introduction}
+
+The study of consciousness has historically followed two largely independent traditions. Neuroscience has sought mechanistic explanations of perception, memory, attention, and action, while philosophy has focused on the subjective character of experience. This separation has produced the familiar distinction between the ``easy problems'' of cognition and the ``hard problem'' of consciousness \citep*{chalmers1996}.
+
+This paper argues that the separation may itself be misleading. A unified framework may emerge if cognition is understood as the formation of self-stabilizing physical organizations that continuously couple organism and environment --- a claim that draws directly on the enactivist tradition \citep*{varela1991} --- and if the physical organization so formed is treated as ontologically, not merely causally, sufficient for experience.
+
+The purpose of this paper is not to claim a final solution to the hard problem, but to present a coherent research programme with explicit conceptual foundations, an explicit relationship to existing theories, and experimentally testable predictions. Section~2 develops the mechanistic account of cognition; Sections~3--4 introduce the ACS and EM constructs; Section~5 situates the framework against its nearest neighbours in the literature; Sections~6--10 develop the ontological proposal; Section~11 gives a formal sketch; Sections~12--13 set out the experimental programme and falsifiable predictions; Sections~14--17 discuss limitations, relation to AI, and publication strategy.
+
+\section{Mechanistic Theory of Embodied Cognition}
+
+\subsection{Perception as Dynamic Stabilization}
+
+Perception is proposed to be an active process of stabilization rather than passive encoding. Organism and environment continuously interact until mutually compatible sensorimotor states are achieved. This is consistent with, and draws on, enactivist accounts of perception as sensorimotor sense-making \citep*{noe2004,thompson2007} and with active inference accounts in which perception minimizes the discrepancy between predicted and sampled sensory states \citep*{friston2010}. It is also closely aligned with Seth's account of perception as a ``controlled hallucination'' --- a top-down generative prediction constrained, but not dictated, by sensory input \citep*{seth2021a} --- and with Seth's extension of this idea to interoceptive inference, in which stabilization applies to predictions about the internal state of the body as much as to predictions about the external world \citep*{seth2021a,tschantz2022}.
+
+\subsection{Action Completes Perception}
+
+Action changes future sensory input. Stable perception therefore requires closed perception-action loops; a purely feed-forward or passive system cannot, on this account, reach the stabilized states that the framework identifies with determinate percepts.
+
+\subsection{Hierarchical Meta-Stability}
+
+Lower neural circuits stabilize rapidly while higher cortical systems stabilize over longer spatial and temporal scales. Increasingly invariant concepts emerge naturally through repeated stabilization. This hierarchical, multi-timescale view of neural organization is consistent with coordination-dynamics accounts of brain function, in which metastability --- the coexistence of tendencies toward both integration and segregation --- is treated as a functional regime rather than a transient artifact \citep*{kelso1995,rabinovich2008}.
+
+Examples include edges, objects, places, affordances, social situations, self-models, and abstract concepts.
+
+\subsection{Multiscale Invariants}
+
+The same stabilization principle is proposed to apply over milliseconds, seconds, learning, development, and evolution, giving the framework a single organizing principle across timescales that are usually treated separately in neuroscience.
+
+\section{Activation-Correlation Structures}
+
+Traditional neuroscience often emphasizes firing rates or localized activity. This framework instead proposes that the relevant computational object is the activation-correlation structure (ACS): the evolving pattern of temporal correlations, synchrony, recurrence, and causal interaction across neural populations. This emphasis is consistent with recurrent-processing accounts of consciousness, which argue that recurrent rather than purely feed-forward interaction is the relevant neural signature of conscious content \citep*{lamme2006}.
+
+ACS provides a candidate bridge between microscopic neural activity and macroscopic cognition. A precise formal definition is given in Section~11; informally, ACS treats the pattern of pairwise and higher-order correlation among neural populations, and its evolution over time, as the primary object of interest, with single-unit firing rates as a lower-dimensional projection of that structure.
+
+Predictions include:
+\begin{itemize}[nosep]
+  \item Stable percepts correspond to stable ACS.
+  \item Conscious transitions correspond to ACS reorganization.
+  \item Dreaming, anesthesia, and disorders of consciousness should exhibit characteristic ACS signatures.
+\end{itemize}
+
+These are developed into operationalized, falsifiable claims in Section~\ref{sec:predictions}.
+
+\section{Electromagnetic Organization}
+
+Neural computation is implemented by ionic currents. Moving charge necessarily generates electromagnetic fields; the brain therefore cannot avoid producing complex EM fields, a fact already exploited by EEG and MEG under the quasi-static volume-conductor approximation \citep*{nunez2006}.
+
+Most microscopic electrical activity contributes incoherent background fluctuations produced by thermal motion, metabolism, glia, chemical reactions, and dense cellular organization. However, recurrent self-sustaining neural loops can generate coherent activation-correlation structures with significantly higher signal-to-noise ratios than the surrounding background --- the same synchronization phenomena that motivate the conscious electromagnetic information (cemi) field theory \citep*{mcfadden2002a,mcfadden2002b,mcfadden2020} and related proposals \citep*{pockett2000}.
+
+This framework departs from cemi field theory at exactly one point, stated precisely: the proposal here is not that the EM field independently generates or constitutes consciousness, and not that it plays an integrative causal role over and above the neural dynamics that generate it. Rather, coherent EM fields are treated as a coarse-grained physical manifestation, i.e.\ a readout, of the underlying metastable ACS organization. Section~\ref{sec:predictions} (Prediction~5) states this as an explicit, empirically separable alternative to cemi's causal-integration claim.
+
+\section{Related Work: Convergence and Divergence}
+
+The framework shares substantial common ground with several existing research programmes. This section states that ground precisely and, for each, identifies the specific point at which the present proposal makes a different claim --- either about mechanism or about ontology --- so that the contribution of the paper can be evaluated independently of its component parts, each of which has established precedent.
+
+\begin{longtable}{p{2.7cm}p{3.1cm}p{3.9cm}p{4.3cm}}
+\toprule
+\textbf{Theory} & \textbf{Main explanatory principle} & \textbf{Shared ground} & \textbf{Precise point of divergence} \\
+\midrule
+\endhead
+Global Workspace Theory \citep*{baars1988,dehaene2001} & Global broadcasting of information across specialized processors & Both treat consciousness as tied to a particular organizational regime of otherwise ordinary neural activity, not a separate substance & GWT explains reportable access; this framework targets the ontological status of the underlying organization itself, independent of whether it is broadcast or reported \\[4pt]
+Integrated Information Theory \citep*{tononi2004,tononi2016} & Maximally irreducible integrated information ($\Phi$) & Both ground experience in the intrinsic organization of a physical system rather than its outputs & IIT grounds experience in a formally defined information-integration measure computed over causal structure; this framework grounds it in the physical existence of a self-stabilizing dynamical organization, with ACS as an empirical proxy rather than a maximization principle \\[4pt]
+Predictive Processing / Active Inference \citep*{friston2010,clark2013,hohwy2013} & Minimization of prediction error / free energy & Both treat perception-action coupling as constitutive of cognition & Here, error minimization is treated as one mechanism by which stabilization is achieved, not as the fundamental quantity being minimized; stabilization is the more general construct, of which free-energy minimization is a candidate implementation \\[4pt]
+Enactivism \citep*{varela1991,thompson2007,noe2004} & Cognition as sense-making through structural coupling with the environment & Strong overlap: perception-as-stabilization (Section~2) is an explicit extension of enactivist commitments & Enactivism generally brackets the hard problem or treats life and mind as continuous without specifying a physical correlate; this framework adds the ACS/EM mechanistic layer and takes an explicit ontological stance \\[4pt]
+EM field theories, esp.\ cemi \citep*{mcfadden2002a,mcfadden2002b,mcfadden2020} & The brain's global EM field is the physical substrate/seat of consciousness & Both treat coherent EM organization as central to consciousness and both invoke synchronous firing as the relevant generator & cemi treats the EM field as causally integrative and, in its later formulations, as the seat of consciousness itself; here the field is a coarse-grained manifestation of the underlying ACS, carrying no independent causal or constitutive role (Prediction~5 is designed to separate the two views) \\[4pt]
+Russellian monism \citep*{strawson2006,chalmers2013} & Physical properties have an intrinsic, experiential-or-proto-experiential nature & The ontological reformulation in Section~8 is a variant of this family of views, not a rival to it & This framework restricts the intrinsic-existence claim to a specific class of self-stabilizing, multiscale organizations rather than to physical entities generally, avoiding commitment to the combination problem that confronts panpsychist versions of Russellian monism \\[4pt]
+Beast machine theory / biological naturalism \citep*{seth2021a,seth2021b,sethbayne2022,seth2025} & Consciousness is grounded in interoceptive, control-oriented prediction in service of staying alive, not in intelligence or information processing per se & Both treat consciousness as inseparable from the organism's ongoing self-stabilizing regulation of itself and its coupling with the world, and both are explicitly cautious about attributing consciousness to non-biological systems (Section~15) & Seth grounds consciousness in the functional, control-theoretic role of prediction for a living system and largely brackets its ultimate physical/ontological substrate; this framework takes the further, more committal step of proposing a specific physical correlate (ACS/EM organization) and an ontological identity claim (Section~6), which Seth's biological naturalism \citep*{seth2025} does not attempt and would likely regard as premature \\
+\bottomrule
+\end{longtable}
+
+Two points follow from this comparison. First, no single element of the framework --- embodied stabilization, ACS, EM manifestation, or ontological identity --- is, on its own, novel; each has a direct precedent in the literature above. Second, the specific combination, and in particular the claim that EM coherence is a manifestation rather than a substrate (contra cemi) while experience is nonetheless identified with the intrinsic existence of the organization that produces it (in the spirit of Russellian monism, but restricted to a specific dynamical class rather than physical entities generally), is not, to the author's knowledge, defended elsewhere in this combination. This is a claim about the paper's contribution, not a claim about its correctness, and it is offered so that reviewers can evaluate it against the nearest alternatives directly.
+
+\section{Consciousness as Ontological Realization}
+
+The central hypothesis is that conscious experience is identical with the existence of a particular class of organized physical reality --- specifically, the class of self-stabilizing, hierarchically organized, multiscale ACS configurations described in Sections~2--3.
+
+No inner observer is required. No additional mental substance is introduced. Instead, the internally stabilized physical world constructed through embodied interaction simply exists, and its existence is proposed to be identical with, rather than merely correlated with, the subjective perspective.
+
+This is a version of an identity claim in the tradition of Russellian monism \citep*{strawson2006}: physical organization, correctly individuated, has an intrinsic aspect, and that intrinsic aspect just is experience. The restriction to a specific dynamical class (rather than to physical entities generally) is intended to avoid the most pressing objection to panpsychist versions of this view --- the combination problem, i.e.\ how simple micro-experiences could combine into unified macro-experience \citep*{chalmers2013} --- by denying that arbitrary physical systems have any experiential aspect at all, and locating intrinsic existence only in systems that meet the stabilization and multiscale-invariance criteria of Section~2. Whether this restriction is principled or merely stipulative is, at present, an open question for the framework rather than a settled result, and is flagged as such.
+
+\section{Qualia, Language, and the Boundary Problem}
+
+Discussions of qualia often assume sharp categories: conscious versus unconscious, red versus non-red, experience versus non-experience. Wittgenstein's analysis of concepts as defined by use within a ``language game'' rather than by necessary and sufficient conditions \citep*{wittgenstein1953} suggests that at least some of these categorical boundaries may reflect the grammar of everyday and clinical discourse about experience rather than a discontinuity in the underlying phenomenon.
+
+This is offered here as a secondary, interpretive claim rather than a load-bearing part of the framework, for two reasons. First, the language-game observation explains why our concepts are binary; it does not by itself establish that the underlying phenomenon is continuous --- that further step requires the independent stabilization-based argument that follows. Second, deflationary treatments of this kind have been contested at length elsewhere (e.g.\ in debates around heterophenomenology), and a full defense is outside the scope of this paper.
+
+The substantive claim the framework does make is that, because ACS organization is a matter of degree (in coherence, hierarchical depth, and multiscale integration), experience --- if identified with the existence of such organization, as proposed in Section~6 --- should likewise admit of degree rather than forming a binary. Simple systems may possess minimal internal organization; complex organisms instantiate increasingly rich internally stabilized worlds. This reframes long-standing binary debates (e.g.\ over which organisms are conscious) as quantitative questions about where a system falls on a continuum of organizational richness, without settling where any threshold of moral or clinical relevance should be drawn.
+
+\section{Mapping the Hard Problem onto Ontology}
+
+The traditional formulation asks: why do physical systems produce experience? The reformulation proposed here asks instead: why does organized physical existence possess an intrinsic aspect?
+
+Under this view, asking why qualia exist becomes analogous to asking why spacetime exists, why quantum fields exist, or why there is something rather than nothing (cf.\ Nagel's, 1974, observation that subjective character resists elimination from any third-person account) \citep*{nagel1974}. The explanatory burden shifts from neuroscience alone to ontology itself, and progress in understanding the ontology of physical existence becomes, on this view, simultaneously progress toward understanding consciousness.
+
+This move is not original to this paper: it is a restatement, for a specific dynamical class, of the position defended by \citet*{strawson2006} and discussed by \citet*{chalmers2013} under the heading of Russellian monism. The paper's claim is narrower than the general thesis --- namely, that this move is well-motivated once cognition is independently analyzed as self-stabilizing ACS organization, and that it yields empirical traction (Sections~11--13) that the general metaphysical thesis alone does not. Reviewers who are unpersuaded by Russellian monism in general will reasonably remain unpersuaded by this section on the same grounds; the mechanistic sections (2--4, 11--13) are intended to be evaluable independently of it.
+
+\section{Particle Analogy}
+
+Modern physics frequently interprets particles as metastable excitations of underlying quantum fields. By loose analogy, conscious episodes may be interpreted as metastable organizations within neural physical dynamics. The analogy is conceptual and heuristic rather than quantum-mechanical; no claim is made that neural metastability involves quantum-field-theoretic mechanisms. The emphasis is only on emergence, stability, and organization as shared structural features.
+
+\section{Internal Physical Worlds}
+
+External reality constrains the organism. Through continual interaction, the nervous system constructs a dynamically maintained internal physical world. This internal world is physically instantiated, is causally effective, mirrors multiscale invariants of the external world, and remains partially autonomous through recurrent dynamics.
+
+Conscious experience, on this account, corresponds to the existence of this internal world --- not to a representation of it viewed by some further internal observer.
+
+\section{Formal Sketch}
+\label{sec:formal}
+
+Although the framework is primarily conceptual, this section gives a minimal formal sketch of how its central constructs relate, sufficient to make Section~\ref{sec:predictions}'s predictions precise. The sketch draws on established formalisms from coordination dynamics \citep*{kelso1995}, metastable neural dynamics \citep*{rabinovich2008}, and EEG/MEG forward modelling \citep*{nunez2006}; it is not itself a new dynamical-systems result.
+
+Let $x(t) \in \mathbb{R}^n$ denote the state of $n$ neural populations (e.g.\ local field potentials or population firing rates) at time $t$. Define the windowed activation-correlation matrix
+\begin{equation}
+C(t) = \mathrm{Corr}\big[\, x(t') : t' \in [t-\tau,\, t] \,\big],
+\end{equation}
+i.e.\ the $n \times n$ matrix of pairwise correlations (or a suitable higher-order generalization, such as time-lagged mutual information) computed over a sliding window of width $\tau$. ACS, as used informally in Sections~3--4, refers to the trajectory $C(t)$ together with its higher-order structure (community structure, hierarchical clustering across $\tau$).
+
+A configuration is \emph{metastable} over an interval $[t_1, t_2]$ if the rate of change of $C(t)$ remains below a threshold $\varepsilon$ for the duration of the interval,
+\begin{equation}
+\left\lVert \frac{dC}{dt} \right\rVert < \varepsilon ,
+\end{equation}
+punctuated by intervals of rapid reorganization in which $\lVert dC/dt \rVert$ exceeds $\varepsilon$ by an order of magnitude or more --- the dwell-time / burst pattern already documented for large-scale brain dynamics \citep*{rabinovich2008}. The hierarchical metastable manifolds $M_i$ referenced informally in Section~2.3 are then defined as the set of approximately-invariant subspaces of $C(t)$ that remain metastable at successively longer values of $\tau$, giving a nested family $M_1 \subset M_2 \subset \dots$ indexed by timescale.
+
+The embodied perception-action graph $G$ is the coupling graph between $x(t)$ and a parallel external/effector state $y(t)$ (sensory input and motor output), with edge weights updated by the same stabilization dynamics; closure of this loop (Section~2.2) is the condition that some subset of $x(t)$ causally influences $y(t)$, which in turn causally influences future $x(t)$.
+
+Finally, under the quasi-static approximation standard in EEG/MEG forward modelling, the EM field $E(x,t)$ at a point outside the neural tissue is a linear functional of the instantaneous current source distribution implied by $x(t)$ \citep*{nunez2006}. Because $C(t)$ is defined over the same underlying activity that generates these current sources, the framework's specific claim is that the coherent (high-SNR) component of $E(x,t)$ is well predicted by the community structure of $C(t)$ at the corresponding timescale --- a relationship that is directly estimable from simultaneous intracranial/EEG recordings and is stated formally as Prediction~5 in Section~\ref{sec:predictions}.
+
+This sketch is deliberately minimal. It does not yet specify the stabilization dynamics themselves (i.e.\ what drives $x(t)$ toward metastable $C(t)$ configurations); a full treatment --- plausibly a free-energy- or Lyapunov-function-based account, given the connections noted to active inference in Section~5 --- is left to the companion computational paper referenced in Section~17.
+
+\section{Experimental Programme}
+
+Potential empirical directions include:
+\begin{itemize}[nosep]
+  \item Mapping activation-correlation structures during stable perception.
+  \item Comparing correlation signatures across sensory modalities.
+  \item Identifying minimal ACS associated with conscious report.
+  \item Characterizing transitions during sleep, anesthesia, meditation, and psychedelic states.
+  \item Lesion studies examining degradation of ACS.
+  \item Neural organoids and cultured networks.
+  \item Artificial embodied agents implementing self-stabilizing loops.
+\end{itemize}
+
+A central prediction is that consciousness should correlate more strongly with multiscale ACS organization than with simple firing rates or anatomical localization; Section~\ref{sec:predictions} states this and four related claims in operationalized form.
+
+\section{Falsifiable Predictions}
+\label{sec:predictions}
+
+Each prediction below is stated with a candidate measure and a directional, testable claim, to address the concern that predictions phrased only in direction (``more organized ACS should relate to X'') are not yet falsifiable.
+
+\begin{description}[leftmargin=1.2cm,style=nextline]
+\item[P1 (ACS over firing rate)] Using existing intracranial or MEG datasets with graded conscious report (e.g.\ near-threshold perception paradigms), a multivariate classifier trained on windowed correlation-matrix features $C(t)$ should out-perform (higher AUC, held-out cross-validation) an equivalent classifier trained on firing-rate or amplitude features alone, in predicting trial-by-trial report. Failure to find a consistent advantage across datasets would disconfirm this prediction.
+
+\item[P2 (convergent organization across individuals)] Building on inter-subject correlation methods \citep*{hasson2004}, the community structure of $C(t)$ during matched naturalistic stimuli should show higher cross-subject similarity (e.g.\ graph-alignment or Mantel-test statistics) than would be expected from anatomical alignment of raw activity alone. A null result --- cross-subject ACS similarity no higher than raw-activity similarity --- would disconfirm this prediction.
+
+\item[P3 (graded organization tracks graded phenomenology)] Using an independent, validated index of consciousness level such as the Perturbational Complexity Index \citep*{casali2013}, degradation of ACS coherence (e.g.\ reduced modularity or reduced multiscale range of stable $M_i$) should track reductions in PCI across the sleep--anesthesia--disorders-of-consciousness spectrum. A dissociation between ACS degradation and PCI would disconfirm this prediction.
+
+\item[P4 (artificial embodied agents)] Embodied artificial agents implementing closed perception-action stabilization loops (Section~2) should reproduce specific cognitive signatures associated with hierarchical invariant formation (e.g.\ emergence of object permanence-like representations, measured behaviourally) before matching human-level task performance, relative to matched feed-forward agents of equal parameter count. Absence of this ordering would disconfirm this prediction.
+
+\item[P5 (EM field as manifestation, not substrate)] The direct test against cemi: if the EM field is a coarse-grained manifestation of ACS (this framework), then experimentally perturbing the EM field directly (e.g.\ via weak transcranial alternating-current stimulation, TMS, or the field-clamp protocols already used in cemi-related work) while leaving the generating ACS statistically unchanged should have no effect on conscious content. If instead the EM field plays an independent integrative/causal role \citep*{mcfadden2002a,mcfadden2020}, such perturbation should alter conscious content even without a corresponding change in ACS. This prediction is designed to be directly adjudicating between the two theories using existing perturbation paradigms.
+\end{description}
+
+\section{Discussion}
+
+\subsection*{Strengths}
+\begin{itemize}[nosep]
+  \item Compatible with mainstream neuroscience and with physicalism; avoids dualism.
+  \item Restricts rather than generalizes panpsychist commitments, avoiding the combination problem by construction (Section~6).
+  \item Generates operationalized, falsifiable predictions, including one (P5) that directly adjudicates between this framework and its closest rival (cemi field theory).
+  \item Gives cognition and consciousness a shared mechanistic vocabulary (ACS) rather than treating them as requiring separate theories.
+\end{itemize}
+
+\subsection*{Limitations}
+\begin{itemize}[nosep]
+  \item Does not explain why existence itself exists; the ontological reformulation in Sections~6 and~8 relocates rather than resolves the hard problem, and is a restricted variant of an existing position (Russellian monism) rather than a new one.
+  \item The restriction of intrinsic existence to a specific dynamical class (Section~6) is currently stipulative; a principled criterion distinguishing qualifying from non-qualifying organizations is not yet given.
+  \item Does not claim EM fields alone are sufficient, and the manifestation-not-substrate claim (Section~4, Prediction~5) remains empirically untested at the time of writing.
+  \item The formal sketch (Section~11) specifies representational and measurement constructs ($C(t)$, $M_i$) but not yet the stabilization dynamics that would explain why the system moves toward metastable configurations in the first place; this is deferred to companion computational work.
+  \item Requires future computational and experimental validation, particularly for P2--P5.
+\end{itemize}
+
+\section{Relation to Artificial Intelligence}
+
+The framework suggests that current deep learning systems primarily learn statistical mappings rather than maintaining persistent embodied perception-action loops, and so, on this account, do not instantiate the class of organization to which Section~6 restricts intrinsic existence --- a claim consistent with, though independent of, the general observation that most deployed systems lack closed sensorimotor loops with a persistent internal state.
+
+Future AI systems could instead be constructed around continual interaction, self-maintained internal states, multiscale stabilization, hierarchical abstraction through invariants, and activation-correlation dynamics rather than purely feed-forward representations. This does not imply such systems would be conscious under the framework --- that further claim would require them to meet the stabilization criteria of Section~2, which is an empirical and architectural question, not a guarantee --- but it does provide an experimentally grounded research direction, developed further in the companion paper referenced in Section~17.
+
+This caution converges with Seth's recent biological naturalism, which argues that consciousness is tied to the specific control-oriented, interoceptive machinery of living systems in service of staying alive, and that current and near-term AI systems --- however behaviourally sophisticated --- lack the relevant biological organization and so should not be presumed conscious merely on the basis of intelligent behaviour \citep*{seth2025,gomezmarin2025}. The present framework agrees with this cautionary conclusion but grounds it differently: not in biological substrate as such, but in whether a system's dynamics meet the self-stabilizing, multiscale ACS criteria of Section~2, which is in principle substrate-independent even if, as a matter of current engineering fact, no artificial system yet satisfies them.
+
+\section{Conclusion}
+
+The proposed framework views cognition and consciousness as different descriptions of the same underlying physical process. Self-stabilizing perception-action loops generate hierarchical metastable representations of the world. These are expressed physically through multiscale activation-correlation structures and coherent electromagnetic organization, with the latter treated as a manifestation of the former rather than an independent substrate.
+
+Conscious experience is identified not as an additional substance, but as the intrinsic existence of an internally instantiated physical world maintained through these self-sustaining dynamics --- a restricted, dynamically-grounded variant of Russellian monism rather than a novel metaphysics.
+
+Rather than treating qualia as a unique anomaly, the framework relocates the remaining mystery to ontology itself: the nature of existence. This relocation is explicitly not claimed as original; what is original is the specific mechanistic route by which embodied stabilization, activation-correlation structure, and coherent electromagnetic organization are connected, and the falsifiable, operationalized predictions --- particularly P5 --- that follow from it and distinguish it from its nearest neighbours in the literature.
+
+\section{Publication Strategy}
+
+This work is best viewed as the conceptual foundation of a broader research programme. Companion papers are planned to include:
+\begin{itemize}[nosep]
+  \item Computational models of self-stabilizing embodied cognition, including a full dynamical account of the stabilization process left open in Section~11.
+  \item Activation-correlation analysis of simulated neural systems.
+  \item PRAttention as an engineering approximation to the stabilization dynamics.
+  \item Experimental neuroscience proposals operationalizing Predictions P1--P5.
+  \item Artificial embodied agents implementing hierarchical stabilization, relevant to Section~15.
+\end{itemize}
+
+Separating the conceptual and computational contributions allows the central philosophical framework to stand independently, evaluable on its own mechanistic and ontological merits, while computational and experimental evidence accumulates over time.
+
+\begin{thebibliography}{99}
+
+\bibitem[Baars, 1988]{baars1988} Baars, B. J. (1988). \textit{A Cognitive Theory of Consciousness}. Cambridge University Press.
+
+\bibitem[Casali et al., 2013]{casali2013} Casali, A. G., Gosseries, O., Rosanova, M., Boly, M., Sarasso, S., Casali, K. R., Casarotto, S., Bruno, M.-A., Laureys, S., Tononi, G., \& Massimini, M. (2013). A theoretically based index of consciousness independent of sensory processing and behavior. \textit{Science Translational Medicine}, 5(198), 198ra105.
+
+\bibitem[Chalmers, 1996]{chalmers1996} Chalmers, D. J. (1996). \textit{The Conscious Mind: In Search of a Fundamental Theory}. Oxford University Press.
+
+\bibitem[Chalmers, 2013]{chalmers2013} Chalmers, D. J. (2013). Panpsychism and panprotopsychism. \textit{Amherst Lecture in Philosophy}, 8.
+
+\bibitem[Clark, 2013]{clark2013} Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. \textit{Behavioral and Brain Sciences}, 36(3), 181--204.
+
+\bibitem[Dehaene \& Naccache, 2001]{dehaene2001} Dehaene, S., \& Naccache, L. (2001). Towards a cognitive neuroscience of consciousness: Basic evidence and a workspace framework. \textit{Cognition}, 79(1--2), 1--37.
+
+\bibitem[Friston, 2010]{friston2010} Friston, K. (2010). The free-energy principle: A unified brain theory? \textit{Nature Reviews Neuroscience}, 11(2), 127--138.
+
+\bibitem[G\'omez-Mar\'in \& Seth, 2025]{gomezmarin2025} G\'omez-Mar\'in, A., \& Seth, A. K. (2025). A science of consciousness beyond pseudo-science and pseudo-consciousness. \textit{Nature Neuroscience}, 28(4), 703--706.
+
+\bibitem[Hasson et al., 2004]{hasson2004} Hasson, U., Nir, Y., Levy, I., Fuhrmann, G., \& Malach, R. (2004). Intersubject synchronization of cortical activity during natural vision. \textit{Science}, 303(5664), 1634--1640.
+
+\bibitem[Hohwy, 2013]{hohwy2013} Hohwy, J. (2013). \textit{The Predictive Mind}. Oxford University Press.
+
+\bibitem[Kelso, 1995]{kelso1995} Kelso, J. A. S. (1995). \textit{Dynamic Patterns: The Self-Organization of Brain and Behavior}. MIT Press.
+
+\bibitem[Lamme, 2006]{lamme2006} Lamme, V. A. F. (2006). Towards a true neural stance on consciousness. \textit{Trends in Cognitive Sciences}, 10(11), 494--501.
+
+\bibitem[McFadden, 2002a]{mcfadden2002a} McFadden, J. (2002a). Synchronous firing and its influence on the brain's electromagnetic field: Evidence for an electromagnetic theory of consciousness. \textit{Journal of Consciousness Studies}, 9(4), 23--50.
+
+\bibitem[McFadden, 2002b]{mcfadden2002b} McFadden, J. (2002b). The conscious electromagnetic field theory: The hard problem made easy. \textit{Journal of Consciousness Studies}, 9(8), 45--60.
+
+\bibitem[McFadden, 2020]{mcfadden2020} McFadden, J. (2020). Integrating information in the brain's EM field: The cemi field theory of consciousness. \textit{Neuroscience of Consciousness}, 2020(1), niaa016.
+
+\bibitem[Nagel, 1974]{nagel1974} Nagel, T. (1974). What is it like to be a bat? \textit{The Philosophical Review}, 83(4), 435--450.
+
+\bibitem[No\"e, 2004]{noe2004} No\"e, A. (2004). \textit{Action in Perception}. MIT Press.
+
+\bibitem[Nunez \& Srinivasan, 2006]{nunez2006} Nunez, P. L., \& Srinivasan, R. (2006). \textit{Electric Fields of the Brain: The Neurophysics of EEG} (2nd ed.). Oxford University Press.
+
+\bibitem[Pockett, 2000]{pockett2000} Pockett, S. (2000). \textit{The Nature of Consciousness: A Hypothesis}. Writers Club Press.
+
+\bibitem[Rabinovich et al., 2008]{rabinovich2008} Rabinovich, M. I., Huerta, R., Varona, P., \& Afraimovich, V. S. (2008). Transient cognitive dynamics, metastability, and decision making. \textit{PLoS Computational Biology}, 4(5), e1000072.
+
+\bibitem[Seth, 2021a]{seth2021a} Seth, A. K. (2021a). \textit{Being You: A New Science of Consciousness}. Faber/Dutton.
+
+\bibitem[Seth, 2021b]{seth2021b} Seth, A. K. (2021b). The real problem(s) with panpsychism. \textit{Journal of Consciousness Studies}, 28(9--10), 52--64.
+
+\bibitem[Seth, 2025]{seth2025} Seth, A. K. (2025). Conscious artificial intelligence and biological naturalism. \textit{Behavioral and Brain Sciences}. Advance online publication.
+
+\bibitem[Seth \& Bayne, 2022]{sethbayne2022} Seth, A. K., \& Bayne, T. (2022). Theories of consciousness. \textit{Nature Reviews Neuroscience}, 23(7), 439--452.
+
+\bibitem[Strawson, 2006]{strawson2006} Strawson, G. (2006). Realistic monism: Why physicalism entails panpsychism. \textit{Journal of Consciousness Studies}, 13(10--11), 3--31.
+
+\bibitem[Thompson, 2007]{thompson2007} Thompson, E. (2007). \textit{Mind in Life: Biology, Phenomenology, and the Sciences of Mind}. Harvard University Press.
+
+\bibitem[Tononi, 2004]{tononi2004} Tononi, G. (2004). An information integration theory of consciousness. \textit{BMC Neuroscience}, 5, 42.
+
+\bibitem[Tononi et al., 2016]{tononi2016} Tononi, G., Boly, M., Massimini, M., \& Koch, C. (2016). Integrated information theory: From consciousness to its physical substrate. \textit{Nature Reviews Neuroscience}, 17(7), 450--461.
+
+\bibitem[Tschantz et al., 2022]{tschantz2022} Tschantz, A., Barca, L., Maisto, D., Buckley, C. L., Seth, A. K., \& Pezzulo, G. (2022). Simulating homeostatic, allostatic and goal-directed forms of interoceptive control using active inference. \textit{Biological Psychology}, 169, 108266.
+
+\bibitem[Varela et al., 1991]{varela1991} Varela, F. J., Thompson, E., \& Rosch, E. (1991). \textit{The Embodied Mind: Cognitive Science and Human Experience}. MIT Press.
+
+\bibitem[Wittgenstein, 1953]{wittgenstein1953} Wittgenstein, L. (1953). \textit{Philosophical Investigations} (G. E. M. Anscombe, Trans.). Blackwell.
+
+\end{thebibliography}
+
+\end{document}
